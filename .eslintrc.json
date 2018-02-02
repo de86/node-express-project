@@ -1,0 +1,53 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jasmine": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "eol-last": ["error", "always"],
+        "implicit-arrow-linebreak": [
+            "error",
+            "below"
+        ],
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "no-console": 0,
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "object-curly-spacing": [
+            "error",
+            "always",
+            { 
+                "arraysInObjects": false, 
+                "objectsInObjects": false
+            }
+        ],
+        "quotes": [
+            "error",
+            "single", 
+            { "allowTemplateLiterals": true }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-in-parens": [
+            "error",
+            "always",
+            {
+                "exceptions": ["{}", "[]", "()", "empty"] 
+            }
+        ],
+        "use-isnan": "error",
+        "yoda": "error"
+    }
+}
