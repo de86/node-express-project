@@ -15,7 +15,6 @@ app.use ( morgan( 'dev' ));
 // Routes
 routes( app );
 
-
 // Start App
 app.listen( config.PORT, () =>
   console.log( `App listening on port ${config.PORT}, Happy hunting` ));
