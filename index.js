@@ -19,8 +19,3 @@ routes( app );
 // Start App
 app.listen( config.PORT, () =>
   console.log( `App listening on port ${config.PORT}, Happy hunting` ));
-
-
-// ToDo: 
-// - Move routes into its own module
-// - Configure Morgan or other logger
