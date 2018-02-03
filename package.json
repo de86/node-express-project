@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Node/Express starte project",
+  "description": "Node/Express starter project",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --inspect .",

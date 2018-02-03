@@ -7,11 +7,8 @@
     },
     "extends": "eslint:recommended",
     "rules": {
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
         "eol-last": ["error", "always"],
-        "implicit-arrow-linebreak": [
-            "error",
-            "below"
-        ],
         "indent": [
             "error",
             2
