@@ -7,13 +7,27 @@ const routes       = require ( './routes' );
 
 const app = express();
 
+
 // Middleware
 app.use ( bodyParser.json());
 app.use ( cookieParser());
 app.use ( morgan( 'dev' ));
 
+
 // Routes
 routes( app );
+
+
+// Error handling middleware
+app.use (( err, req, res, next ) => {
+  console.log( err );
+
+  res.status( err.status || 422 )
+    .send({ error: err.message });
+
+  return next( err );
+});
+
 
 // Start App
 app.listen( config.PORT, () =>
