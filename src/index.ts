@@ -1,9 +1,9 @@
-const express      = require ( 'express' );
-const cookieParser = require ( 'cookie-parser' );
-const bodyParser   = require ( 'body-parser' );
-const morgan       = require ( 'morgan' );
-const config       = require ( './config' );
-const routes       = require ( './routes' );
+import * as express      from  'express';
+import * as cookieParser from  'cookie-parser';
+import * as bodyParser   from  'body-parser';
+import * as morgan       from  'morgan';
+import config       from  './config';
+import routes       from  './server/routes';
 
 const app = express();
 
@@ -19,7 +19,7 @@ routes( app );
 
 
 // Error handling middleware
-app.use (( err, req, res, next ) => {
+app.use (( err: any, req: any, res: any, next: any ) => {
   console.log( err );
 
   res.status( err.status || 422 )

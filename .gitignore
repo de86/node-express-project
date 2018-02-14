@@ -1,1 +1,7 @@
 **/node_modules 
+_coverage
+_jestcache
+**/build/**/*
+**/public/**/*
+commit.message
+keys.js
