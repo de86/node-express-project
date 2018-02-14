@@ -4,7 +4,7 @@
   "description": "Node/Express starter project",
   "main": "index.ts",
   "scripts": {
-    "dev": "tsc && node build/.",
+    "dev": "webpack-dev-server",
     "test": "jest --config jest.config.json",
     "snaps": "jest --config jest.config.json --colors -u",
     "test-spec": "jest --config jest.config.json --colors -t",
@@ -42,6 +42,7 @@
     "ts-loader": "^3.5.0",
     "ts-node": "^4.1.0",
     "typescript": "^2.7.1",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
