@@ -1,0 +1,36 @@
+{
+  "verbose": true,
+  "cacheDirectory": "_jestcache",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "/src/*/**",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageDirectory": "_coverage",
+  "coverageReporters": [
+    "json",
+    "text",
+    "text-summary"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branch":     90,
+      "functions":  90,
+      "lines":      90,
+      "statements": 90
+    }
+  },
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "jsx",
+    "ts",
+    "tsx"
+  ],
+  "transform": {
+    ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "spec.(ts|tsx|js)$",
+  "testURL": "http://localhost/"
+}
